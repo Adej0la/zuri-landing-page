@@ -304,7 +304,7 @@ a {
   gap: var(--space-2xs);
 } */
 .social-links > * {
-  flex-basis: var(--space-s);
+  flex-basis: var(--space-s-m);
   flex-grow: 0;
   flex-shrink: 0;
 }
@@ -680,4 +680,9 @@ ul[role="list"].listed {
 }
 .justify\:space-between {
   justify-content: space-between;
+}
+@media screen and (max-width: calc(425rem / 16)) {
+  .sm\:justify-center {
+    justify-content: center;
+  }
 }
