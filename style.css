@@ -619,6 +619,10 @@ ul[role="list"].listed {
   -webkit-padding-before: 0;
   padding-block-start: 0;
 }
+.pad-top\:3xl {
+  -webkit-padding-before: var(--space-2xl);
+  padding-block-start: var(--space-2xl);
+}
 .pad-right\:0 {
   -webkit-padding-end: 0;
   padding-inline-end: 0;
@@ -751,6 +755,9 @@ ul[role="list"].listed {
 
 .grow\:2x {
   flex-grow: 2;
+}
+.shrink\:2x {
+  flex-shrink: 2;
 }
 .align-items\:baseline {
   align-items: baseline;
