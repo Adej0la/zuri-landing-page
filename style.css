@@ -164,6 +164,10 @@ a {
   margin-top: var(--space-l-xl);
 }
 
+.box-3xs {
+  padding-inline: var(--space-3xs-2xs);
+  padding-block: var(--space-3xs-2xs);
+}
 .box-2xs {
   padding-inline: var(--space-2xs-xs);
   padding-block: var(--space-2xs-xs);
