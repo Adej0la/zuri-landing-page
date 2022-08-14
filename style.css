@@ -546,7 +546,7 @@ a {
   margin-top: var(--space-xs);
 }
 
-@supports (list-style: none;) {
+@supports (list-style: none) {
   .accordion details > :first-child {
     list-style: none;
     position: relative;
