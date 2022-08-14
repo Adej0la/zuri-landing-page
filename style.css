@@ -784,6 +784,11 @@ ul[role="list"].listed {
 .text-align\:center {
   text-align: center;
 }
+@media screen and (max-width: calc(768rem / 16)) {
+  .md\:text-center {
+    text-align: center;
+  }
+}
 
 .bold {
   font-weight: 600;
