@@ -411,7 +411,9 @@ a {
     display: none;
   }
 }
-
+.image-arrow-left > img {
+  max-width: 14%;
+}
 .card-group > * {
   display: flex;
   flex-direction: column;
@@ -485,11 +487,18 @@ a {
   margin-right: auto;
 }
 
+.image-arrow-right > img {
+  width: max(12%, 100px);
+}
 .card-group-1 > * > h3 {
   font-weight: 600;
   font-size: var(--step-0);
 }
 
+.image-arrow-right[data-position="invert"] > img {
+  width: max(12%, 60px);
+  transform: translate(-150%, 30%);
+}
 .accordion {
   width: 85%;
   margin-inline: auto;
