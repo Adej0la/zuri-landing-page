@@ -546,30 +546,32 @@ a {
   margin-top: var(--space-xs);
 }
 
-@supports (list-style: none) {
-  .accordion details > :first-child {
-    list-style: none;
-    position: relative;
-    -webkit-padding-start: var(--space-3xs-2xs);
-    padding-inline-start: var(--space-3xs-2xs);
-  }
-  .accordion details > :first-child::before {
-    content: "";
-    border: var(--space-3xs) solid black;
-    border-top-color: transparent;
-    border-right-color: transparent;
-    border-bottom-color: transparent;
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%) translateX(-150%) rotate(0deg);
-    transition: 150ms transform ease-in-out;
-  }
-  .accordion details[open] > :first-child::before {
-    transform: translateY(-50%) translateX(-150%) rotate(90deg);
-  }
+.accordion details > summary {
+  position: relative;
+  -webkit-padding-start: var(--space-3xs-2xs);
+  padding-inline-start: var(--space-3xs-2xs);
 }
-.accordion details > :first-child > h3 {
+.accordion details > summary::marker,
+.accordion details > summary::-webkit-details-marker {
+  content: none;
+  display: none;
+}
+.accordion details > :first-child::before {
+  content: "";
+  border: var(--space-3xs) solid black;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%) translateX(-150%) rotate(0deg);
+  transition: 150ms transform ease-in-out;
+}
+.accordion details[open] > summary::before {
+  transform: translateY(-50%) translateX(-150%) rotate(90deg);
+}
+.accordion details > summary > h3 {
   display: inline;
 }
 
